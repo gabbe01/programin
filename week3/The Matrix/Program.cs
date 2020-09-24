@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
+using System.Text.Json.Serialization;
 using System.Threading;
 
 namespace The_Matrix
@@ -16,7 +17,7 @@ namespace The_Matrix
             var streamColors = new List<ConsoleColor> { };
 
             var symbols = "10";
-            var possibleColors = new List<ConsoleColor> { ConsoleColor.DarkGreen, ConsoleColor.Green, ConsoleColor.White};
+            var possibleColors = new List<ConsoleColor> { ConsoleColor.Blue, ConsoleColor.Green, ConsoleColor.DarkYellow, ConsoleColor.Magenta,ConsoleColor.Cyan,ConsoleColor.Red,ConsoleColor.White,ConsoleColor.Gray};  JsonConverterFactory
 
             for (int i = 0; i < 80; i++)
             {
