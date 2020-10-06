@@ -4,37 +4,98 @@ namespace MEGA_TANK_BATTLE
 {
     class Program
     {
-        private static int width;
+       
 
         static void Main(string[] args)
-        {
+        {   
             var random = new Random();
             int tankDistance = random.Next(40, 70);
-            
-            Console.WriteLine("DANGER! A tank is approaching our position. help us obi wan kenobi Your our only hope!");
+            int Width = 80; 
+            Console.WriteLine("DANGER! An AT-AT is approaching our position. help us obi wan kenobi Your our only hope!");
+            Console.WriteLine();
+            Console.WriteLine("What is your name, commander?");
+            Console.Write("Enter name: ");
+            string name = Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine("Here is the map of the battlefield:");
             Console.WriteLine();
 
-            // Draw the artillery (2 characters)
+           
             Console.Write($"_/");
 
-            // Draw the ground between artillery to tank (tankDistance characters)
+            
             for (int i = 0; i < tankDistance; i++)
             {
                 Console.Write($"_");
             }
 
-            // Draw the tank (1 character)
+           
             Console.Write($"T");
 
-            // Draw the rest of the ground (restOfGrondDistance characters ... so that total is 80 characters)
+           
             int restOfGrondDistance = 80 - 1 - 2 - tankDistance;
             for (int i = 0; i < restOfGrondDistance; i++)
             {
                 Console.Write($"_");
             }
             Console.WriteLine();
+            Console.WriteLine();
+
+
+            int shells = 5;
+            for (int shotNumber = 0; shotNumber < 5; shotNumber++)
+            {
+
+
+                Console.WriteLine($"Aim your shot,{name}");
+                Console.Write($"Enter distance: ");
+                string shotDistanceText = Console.ReadLine();
+                int shotDistance = Int32.Parse(shotDistanceText);
+
+                // Draw explosion
+                // 1. Write enough spaces to reach explosion.
+                
+                for (int i = 0; i < 2 + shotDistance; i++)
+                {
+                    Console.Write(" ");
+                }
+
+                // 2. Write explosion character.
+                Console.WriteLine("*");
+
+
+                // Output result of shot.
+                if (shotDistance < tankDistance)
+                {
+                    Console.WriteLine("your shot was too short.");
+                }
+                else if (shotDistance > tankDistance)
+                {
+                    Console.WriteLine("your shot was too long.");
+                }
+                else
+                {
+                    Console.WriteLine("EXPLOSION VICTORY!!");
+                    break;
+                }
+               
+                shells--;
+
+                Console.WriteLine($"you have {shells} shells left.");
+                
+
+
+
+                Console.WriteLine();
+            }
+
+
+            if(shells == 0)
+            {
+                Console.WriteLine("GAME OVER NOOB");
+            }
+            
+
 
 
 
