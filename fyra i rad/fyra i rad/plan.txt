@@ -1,0 +1,37 @@
+﻿Day 1-2
+- Display empty board
+- Learn multidimensional arrays
+
+Day 3
+- Create board (with ints)
+- Fill in test data
+- Display test board
+
+Day 4
+- Learn enumerations
+- Create board values enum
+- Change board from ints to enums
+- Display test board
+
+Day 5
+- Create player color enum
+- Add current player variable
+- Display current player
+- Learn flowcharts
+
+Day 6
+- Create game architecture outline
+
+Day 7
+- Learn ReadKey
+- Handle player input
+
+Day 8
+- Add piece
+
+Day 9-10
+- Analyze board
+
+Day 11
+- Switch players
+- Display win/draw message

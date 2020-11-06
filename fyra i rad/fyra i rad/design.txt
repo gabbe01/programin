@@ -1,0 +1,33 @@
+﻿board 
+- size: 7x6
+
+2 players 
+- color blue & red
+- first blue 
+
+pieces
+- blue# ¤red 
+- fall to bottom of column 
+
+rules
+- win whem you have 4 in a row (horizontal, vertical, rising diagonal, falling diagonal)
+
+
+game properties
+- which piece at each board position (2D array of board values)
+- current player (player color)
+
+
+things to learn
+- multidimensional arrays
+  - W5D1
+    - M1
+  - arrays practice
+    - part 1: 1-2
+    - part 2: 1-3
+- enumerations
+  - W7D4
+- readkey
+  - W7D1
+- flowchart
+  - W3D3
