@@ -11,10 +11,10 @@ namespace MEGA_TANK_BATTLE
             var random = new Random();
             int tankDistance = random.Next(40, 70);
             int Width = 80; 
-            Console.WriteLine("DANGER! An AT-AT is approaching our position. help us obi wan kenobi Your our only hope!");
+            Console.WriteLine("DANGER!An AT-AT is approaching our position. help us obi wan kenobi Your our only hope!");
             Console.WriteLine();
             Console.WriteLine("What is your name, commander?");
-            Console.Write("Enter name: ");
+            Console.Write("Enter name: ");  
             string name = Console.ReadLine();
             Console.WriteLine();
             Console.WriteLine("Here is the map of the battlefield:");
