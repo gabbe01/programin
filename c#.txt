@@ -1,0 +1,3 @@
+how to put out a varibal valu in to a string:
+string name = "gabbe";
+string text = $"im {name}";
