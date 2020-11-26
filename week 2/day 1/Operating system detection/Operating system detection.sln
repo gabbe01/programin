@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operating system detection", "Operating system detection.csproj", "{A455F060-E035-42D3-B844-7498098BA22F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A455F060-E035-42D3-B844-7498098BA22F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A455F060-E035-42D3-B844-7498098BA22F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A455F060-E035-42D3-B844-7498098BA22F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A455F060-E035-42D3-B844-7498098BA22F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {682273DA-802E-41CB-B3A7-0BE8D2AD70C3}
+	EndGlobalSection
+EndGlobal

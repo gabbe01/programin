@@ -1,3 +1,27 @@
 how to put out a varibal valu in to a string:
 string name = "gabbe";
 string text = $"im {name}";
+
+
+how to replace some text in a string:
+string addressBook = "Gamla vägen 12, 362 51 Vackelsang. Dackegatan 15, 362 51 Vackelsang.";
+string fixedAddressBook = addressBook.Replace("Vackelsang","Väckelsång");
+
+ 
+
+
+how to trim spaces from a string:
+string greeting = "   hello world!   ";
+string trimmedGreeting = greeting.Trim();
+console.writeLine($"[{trimmedGreeting}]");
+
+
+how to search for text in a string:
+string songLyricks = "you say goodbye, and i say hello";
+consol.writeLine(songLyrics.contains("goodbye"));
+consol.writeLine(songlyrics.contains("greetings"));
+
+string songLyricks = "you say goodbye, and i say hello";
+consol.writeLine(songLyrics.StartsWith("goodbye"));
+consol.writeLine(songlyrics.EndsWith("greetings"));
+
